@@ -1,0 +1,11 @@
+name: first-test
+on: push
+jobs:
+  first_job:
+   runs-on: ubuntu-20.04
+   steps:
+     - name: hellow-world
+       run: echo "shubham Panchal" > sp.txt
+    -  name: read
+       run: cat sp.txt
+     
