@@ -1,3 +1,24 @@
-name: cowsay
-on: 
-    push
+name: Simple Workflow
+
+on:
+  push:
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show system info
+        run: |
+          echo "Runner OS:"
+          uname -a
+          echo "Current date:"
+          date
+
+      - name: Create a file
+        run: |
+          echo "Hello Shubham" > sp.txt
+          echo "GitHub Actions is working!" >>
