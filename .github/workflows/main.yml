@@ -5,7 +5,7 @@ jobs:
    runs-on: ubuntu-20.04
    steps:
      - name: hellow-world
-       run: echo "shubham Panchal" > sp.txt
+       run: echo "shubham aPanchal" > sp.txt
      - name: read
        run: cat sp.txt
-     
+      
