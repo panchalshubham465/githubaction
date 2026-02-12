@@ -6,6 +6,5 @@ jobs:
    steps:
      - name: hellow-world
        run: echo "shubham aPanchal" > sp.txt
-     - name: read
-       run: cat sp.txt
+    
       
