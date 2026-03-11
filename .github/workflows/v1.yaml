@@ -1,0 +1,14 @@
+name: My First Workflow     # 1. The name of the workflow
+
+on: [push]                  # 2. The Trigger (When does this run?)
+
+jobs:                       # 3. The Work (What happens?)
+  build-and-test:           # Name of the job
+    runs-on: ubuntu-latest  # 4. The Environment (The virtual computer)
+
+    steps:                  # 5. The Instructions
+      - name: Get code
+        uses: actions/checkout@v4  # Copies your repo code onto the runner
+
+      - name: Say hello
+        run: echo "The script is running!"
